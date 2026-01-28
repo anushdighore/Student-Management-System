@@ -1,0 +1,6 @@
+com\example\hibernateSetup\Step3_TestSession.class
+com\example\HibernateUtil.class
+com\example\entity\Student.class
+com\example\hibernateSetup\Step2_SessionFactoryCreation.class
+com\example\hibernateSetup\Step1_ConfigFile.class
+com\example\test\TestStudentMapping.class
