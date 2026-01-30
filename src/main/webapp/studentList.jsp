@@ -18,6 +18,7 @@
  		   background-color: #f2f2f2;	
 		}
     </style>
+    <link ref="stylesheet" href="../styles/index.css">
 </head>
 
 <body>

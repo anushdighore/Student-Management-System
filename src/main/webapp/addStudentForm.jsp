@@ -5,11 +5,25 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Add Student</title>
+    <link rel="stylesheet" href="index.css">
 </head>
-<body>
-	<h1>Student Management System</h1>
+<body class="body">
 	
-	<div style="margin-top: 20px; padding: 10px; background-color: #f0f0f0; width: 300px;">
+<header class="header">
+
+		<nav class="navigation-bar">
+			<a href="index.jsp">Home</a> |
+            <a href="addStudentForm.jsp">Add Student</a> |
+            <a href="dashboard.jsp">View Students</a>
+		</nav>
+		<h1>Student Management System</h1>
+
+</header>
+<main class="main-container">
+
+    <h2>Adding New Student</h2>
+	
+	<div class="form-container">
 	<form action="addStudent.jsp" method="POST">
 		<!-- Form for adding students -->
 		
@@ -36,9 +50,9 @@
 		<input type="submit" value="Submit">
 	</form>
 	</div>
-	
-	<script>
-		console.log("Student form loaded!");
-	</script>
+</main>
+<footer>
+</footer>
+
 </body>
 </html>

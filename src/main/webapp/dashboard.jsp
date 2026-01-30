@@ -13,22 +13,24 @@
 <head>
     <meta charset="UTF-8">
     <title>Dashboard - Student Management System</title>
-    <link rel="stylesheet" href="../styles/dashboard.css">
-    <style>
-    	table{
-			border-collapse:collapse;            
-    	}
-    	th,td{
-    		border: 1px solid black;
-    	}
-    	th {
- 		   background-color: #f2f2f2;	
-		}
-    </style>
-</head>
-<body>
+    <link rel="stylesheet" href="index.css">
+<body class="body">
 
-    <h1> Welcome to the Student Dashboard</h1>
+	<header class="header">
+	
+	<nav class="navigation-bar">
+			<a href="index.jsp">Home</a> |
+            <a href="addStudentForm.jsp">Add Student</a> |
+            <a href="dashboard.jsp">View Students</a>
+		</nav>
+		<h1>Student Management System</h1>
+	
+	
+	</header>
+	<main class="main-container">
+	
+	
+    <h2> Welcome to the Student Dashboard</h2>
     
 <% 
    	try{
@@ -47,6 +49,7 @@
 			<th>Name </th>
 			<th>Surname </th>
 			<th>Phone Number </th>
+			<th>Operations</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -59,6 +62,8 @@
 			<td> <%= stu.getFirstName() %> </td>
 			<td> <%= stu.getLastName()%> </td>
 			<td> <%= stu.getNumber()%> </td>
+			<td> <a href="operations/UpdateStudent.jsp?id=<%=stu.getId()%>"><button style="color:black;background-color: yellow">Edit</button></a>
+                 <a href="operations/DeleteStudent.jsp?id=<%=stu.getId()%>"><button style="color: black;background-color: pink">Delete</button></a>
 		</tr>
 		
 		<% 
@@ -88,8 +93,15 @@
     	}
 %>
     
-    
-    
+    <aside>
+    	<a href="index.jsp">Back to Home</a>
+    	<a href="addStudentForm.jsp">Add New Student</a>
+    </aside>
   
+	
+	</main>
+	<footer>
+	</footer>
+
 </body>        
 </html>	

@@ -1,0 +1,140 @@
+.navigation-bar{
+    background-color: lightblue;
+    text-align: center;
+    padding: 5px;
+    border-radius:2px;
+    border-color:green;
+    border-width: 2px;
+    border: 2px solid black;
+
+}
+
+.navigation-bar a{
+    margin: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.navigation-bar a:hover{
+    background-color: lightgray;
+}
+
+
+.header{
+	background-color:beige;
+	text-align:center;
+}
+
+.main-container{
+	width: 80%;
+	max-width: 900px;
+	margin: 20px auto;
+	color: black;
+	display: block;
+	padding: 20px;
+}
+
+.body{
+	text-align: center;
+	display: block;
+	margin: 20px auto;
+	padding: 20px;
+}
+p::selection {
+  font-weight: bold;
+  color: blue;
+}
+
+
+table{
+	border-collapse:collapse;
+	width: 100%;
+	margin: 20px auto;
+}
+th,td{
+    border: 1px solid black;
+    padding: 12px;
+    text-align: left;
+}
+th {
+ 	background-color: #f2f2f2;
+ 	font-weight: bold;
+}
+
+/* Improve overall page readability */
+body {
+	font-family: Arial, sans-serif;
+	line-height: 1.6;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0;
+	background-image: url('./images/1280w-6Xkt_lbGKbE.jpg');
+}
+
+form {
+	width: 90%;
+	margin: 0px auto;
+	padding: 10px;
+	text-align: center;
+}
+
+input, select, textarea {
+	border-radius: 4px;
+	border: 2px solid #ddd;
+    padding: 3px;
+	margin-left: 10px;
+}
+
+input[type="submit"], button {
+	background-color: #4CAF50;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	margin: 10px;
+}
+
+input[type="submit"]:hover, button:hover {
+	background-color: #45a049;
+}
+.form-container{
+	border-radius: 8px;
+	background-size: cover;
+	background-position: center;
+	margin: 0 auto;
+	padding: 5px; 
+	background-color: #f0f0f0; 
+	width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);}
+form div{
+	
+	display: flex;
+	align-items: center;
+	border-radius: 4px;
+	
+}
+
+aside{
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+aside > a{
+    margin: 10px 5px;
+    
+    padding: 8px 8px ;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color:  #f2f2f2;
+    
+    
+    display: inline-block;
+}
+
+aside> a:hover{
+	color: red;
+	box-shadow: 0 4px 8px black;    
+}
